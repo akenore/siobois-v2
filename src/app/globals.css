@@ -8,6 +8,18 @@
   --color-brown: #4f3d2f;
   --color-primary: #eea224;
   --color-primary-hover: #4d3d2a;
+  --color-dark: #222222;
+}
+
+.navbar-bg {
+  background-image: url('/img/m-bg.jpg');
+  background-repeat: repeat;
+  border-bottom: 4px solid var(--color-primary);
+}
+
+.common-bg {
+  background-image: url('/img/m-bg.jpg');
+  background-repeat: repeat;
 }
 
 :root {
@@ -25,7 +37,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #222222;
+  /* color: #222222; */
   font-weight: 700;
 }
 

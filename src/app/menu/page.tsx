@@ -15,17 +15,16 @@ export default function MenuPage() {
 
      return (
           <main className="fixed inset-0 z-[100] bg-brownred flex flex-col items-center justify-center overflow-hidden">
-               {/* Background Image / Pattern */}
                <div className="absolute inset-0 z-0 opacity-10">
                     <Image
                          src="/img/m-bg.jpg"
                          alt="Menu Background"
                          fill
+                         sizes="100vw"
                          className="object-cover"
                     />
                </div>
 
-               {/* Close Button / Logo */}
                <div className="absolute top-8 left-0 right-0 px-8 flex justify-between items-center z-10">
                     <Link href="/" className="transition-transform hover:scale-105">
                          <Image
@@ -45,7 +44,6 @@ export default function MenuPage() {
                     </Link>
                </div>
 
-               {/* Navigation Links */}
                <nav className="relative z-10 w-full max-w-4xl px-4">
                     <ul className="flex flex-col items-center space-y-8 md:space-y-12">
                          {[
@@ -71,7 +69,6 @@ export default function MenuPage() {
                     </ul>
                </nav>
 
-               {/* Social Icons or Footer Info */}
                <div className="absolute bottom-12 z-10 flex space-x-8">
                     <a
                          href="https://www.facebook.com/SioBois.officiel/"

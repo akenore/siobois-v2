@@ -20,6 +20,7 @@ export default function Realisations() {
                                              src={`/img/projets/${id}/detail/Sio${String(id).padStart(2, '0')}_Retouch.jpg`}
                                              alt={`Projet ${id}`}
                                              fill
+                                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                                              className="object-cover transition-transform duration-700 group-hover:scale-110"
                                         />
                                         <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center text-white p-6">

@@ -9,12 +9,8 @@ export default function ProjectDetail() {
      const { id } = useParams();
      const router = useRouter();
      const [currentSlide, setCurrentSlide] = useState(0);
-
-     // In a real app, this would come from a data file. 
-     // For now we replicate the logic from p1.blade.php
      const projectId = (id as string).replace('p', '');
 
-     // Mocking images since we saw p1 had 2 images
      const images = [
           `/img/projets/${projectId}/detail/Sio${projectId.padStart(2, '0')}_Retouch.jpg`,
           `/img/projets/${projectId}/detail/Sio${projectId.padStart(2, '0')}a_Retouch.jpg`,
@@ -44,6 +40,7 @@ export default function ProjectDetail() {
                                              src={src}
                                              alt={`Projet ${projectId} - Image ${index + 1}`}
                                              fill
+                                             sizes="(max-width: 1024px) 100vw, 1024px"
                                              className="object-contain"
                                         />
                                    </div>
