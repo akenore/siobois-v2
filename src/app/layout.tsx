@@ -17,12 +17,40 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "SioBois | Études Techniques",
-  description: "Pour toutes les structures bois et mixtes bois-métal des plus modestes aux plus ambitieuses, nous mettrons toutes nos compétences acquises à votre service.",
-  authors: [{ name: "CodePixar" }],
-  keywords: ["siobois", "bois", "construction bois", "bois-metal"],
+  title: "SioBois | Bureau d'Études Techniques Bois & Charpente en France",
+  description:
+    "SioBois, bureau d'études techniques spécialisé dans les structures bois et mixtes bois-métal. Plans de fabrication, notes de calculs 3D, diagnostics solidité, fichiers Hundegger et BIM. Expertise charpente traditionnelle et lamellé-collé partout en France.",
+  authors: [{ name: "SioBois - Nicolas Cauret" }],
+  keywords: [
+    "bureau d'études bois",
+    "études techniques charpente",
+    "structure bois France",
+    "charpente traditionnelle",
+    "lamellé-collé",
+    "bois-métal",
+    "plans de fabrication bois",
+    "note de calculs 3D",
+    "diagnostic solidité charpente",
+    "fichiers Hundegger",
+    "BIM bois",
+    "expertise charpente",
+    "SioBois",
+    "Nicolas Cauret",
+  ],
   icons: {
     icon: "/img/fav.png",
+  },
+  openGraph: {
+    title: "SioBois | Bureau d'Études Techniques Bois & Charpente",
+    description:
+      "Expertise en structures bois et mixtes bois-métal. Plans, notes de calculs, diagnostics et fichiers de fabrication pour tous vos projets charpente en France.",
+    locale: "fr_FR",
+    type: "website",
+    siteName: "SioBois",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
