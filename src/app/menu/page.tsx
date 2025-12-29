@@ -30,9 +30,9 @@ export default function MenuPage() {
                          <Image
                               src="/img/logo.png"
                               alt="SioBois Logo"
-                              width={150}
-                              height={50}
-                              className="h-auto w-auto brightness-0 invert"
+                              width={160}
+                              height={54}
+                              className="brightness-0 invert object-contain"
                          />
                     </Link>
                     <Link

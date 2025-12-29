@@ -123,7 +123,7 @@ export default function Home() {
       <section id="identite" className="relative py-48 md:py-64 bg-cover bg-fixed" style={{ backgroundImage: "url('/img/identite-bg.jpg')" }}>
         <div className="absolute inset-0 bg-white/20 z-0"></div>
         <div className="container mx-auto px-4 relative z-10 flex justify-center lg:justify-end">
-          <div className="max-w-2xl p-10">
+          <div className="max-w-2xl p-10 bg-white/50 lg:bg-transparent">
             <h1 className="text-brownred text-5xl font-bold mb-10 uppercase tracking-tight">Identité</h1>
             <div className="space-y-6 text-lg text-brownred font-semibold">
               <p>Nicolas Cauret, Gérant:</p>
