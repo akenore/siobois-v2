@@ -1,7 +1,3 @@
-/**
- * Identité Section
- * Information about the company founder and background.
- */
 export default function IdentiteSection() {
      return (
           <section

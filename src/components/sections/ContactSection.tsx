@@ -1,7 +1,3 @@
-/**
- * Contact Section
- * Company contact information with phone and email.
- */
 export default function ContactSection() {
      return (
           <section

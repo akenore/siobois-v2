@@ -1,8 +1,3 @@
-/**
- * Compétences Section
- * Lists the company's skills and services.
- */
-
 const competencesList = [
      "Optimisation et rendus avant-projet",
      "Relevés de structures existantes",

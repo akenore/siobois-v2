@@ -1,9 +1,4 @@
 import type { MetadataRoute } from "next";
-
-/**
- * Sitemap configuration for SEO
- * Lists all pages for search engine indexing
- */
 export default function sitemap(): MetadataRoute.Sitemap {
      const baseUrl = "https://www.siobois.com";
 

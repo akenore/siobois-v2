@@ -5,22 +5,11 @@ import Image from "next/image";
 import { useState } from "react";
 import Lightbox from "@/components/ui/Lightbox";
 
-/**
- * Project IDs to display in the gallery.
- * These correspond to folders in /public/img/projets/
- */
 const projectIds = [1, 2, 3, 4, 5, 9, 7, 10];
 
-/**
- * Réalisations Section
- * Displays a grid of project images with a lightbox for fullscreen viewing.
- */
 export default function RealisationsSection() {
      const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
-     /**
-      * Get the image path for a project
-      */
      const getProjectImagePath = (id: number) =>
           `/img/projets/${id}/detail/Sio${String(id).padStart(2, "0")}_Retouch.jpg`;
 
@@ -76,7 +65,6 @@ export default function RealisationsSection() {
                     </div>
                </section>
 
-               {/* Lightbox for fullscreen image viewing */}
                {lightboxImage && (
                     <Lightbox
                          src={lightboxImage}

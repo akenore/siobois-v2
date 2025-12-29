@@ -1,9 +1,4 @@
 import Image from "next/image";
-
-/**
- * Hero/Banner Section
- * The main landing section with the company tagline.
- */
 export default function HeroSection() {
      return (
           <section
@@ -18,6 +13,7 @@ export default function HeroSection() {
                          sizes="100vw"
                          className="object-cover"
                          priority
+                         fetchPriority="high"
                     />
                     <div className="absolute inset-0 bg-white/60"></div>
                </div>

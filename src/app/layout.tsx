@@ -61,11 +61,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="scroll-smooth">
+      <head>
+        <link rel="preconnect" href="https://cdn.linearicons.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <style dangerouslySetInnerHTML={{
+          __html: `
+          @font-face {
+            font-family: 'Linearicons-Free';
+            font-display: swap;
+          }
+          @font-face {
+            font-family: 'FontAwesome';
+            font-display: swap;
+          }
+        `}} />
+      </head>
       <body
         className={`${openSans.variable} ${poppins.variable} antialiased font-open-sans`}
       >
-        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <Navbar />
         {children}
         <Footer />
