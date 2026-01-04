@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Add trailing slashes to all URLs
+  trailingSlash: true,
+
   // Remove X-Powered-By header for security
   poweredByHeader: false,
 

@@ -6,10 +6,16 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function ProjectDetail() {
-     const { id } = useParams();
+     const params = useParams();
+     const id = params?.id;
      const router = useRouter();
      const [currentSlide, setCurrentSlide] = useState(0);
-     const projectId = (id as string).replace('p', '');
+
+     if (!id || typeof id !== 'string') {
+          return null;
+     }
+
+     const projectId = id.replace('p', '');
 
      const images = [
           `/img/projets/${projectId}/detail/Sio${projectId.padStart(2, '0')}_Retouch.jpg`,

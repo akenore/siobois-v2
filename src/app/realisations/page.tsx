@@ -24,9 +24,9 @@ export default function Realisations() {
                                              className="object-cover transition-transform duration-700 group-hover:scale-110"
                                         />
                                         <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center text-white p-6">
-                                             <a href={`/p${id}`} className="bg-primary hover:bg-primary-hover text-white px-6 py-2 rounded-full text-sm font-bold uppercase transition-transform scale-90 group-hover:scale-100 mb-4">
+                                             <Link href={`/p${id}`} className="bg-primary hover:bg-primary-hover text-white px-6 py-2 rounded-full text-sm font-bold uppercase transition-transform scale-90 group-hover:scale-100 mb-4">
                                                   Détail
-                                             </a>
+                                             </Link>
                                              <div className="w-12 h-px bg-white/50 mb-2"></div>
                                              <h5 className="text-xl uppercase font-bold tracking-widest">Projet {id < 10 ? `0${id}` : id}</h5>
                                         </div>
