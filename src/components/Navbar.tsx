@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { NAV_LINKS, SOCIAL_LINKS } from "@/constants/navigation";
+import { NAV_LINKS, SOCIAL_LINKS } from "../constants/navigation";
 
 const Navbar = () => {
      const [isSticky, setIsSticky] = useState(false);
